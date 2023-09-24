@@ -3,6 +3,7 @@
 - The application ensures that all basic functions of the request are fulfilled. 
 - I not use any external library.
 - Use MySQL for the database.
+- The project was created using the MVC model.
 - Use PHP for backend development, without any Framework.
 
 ## Main features
@@ -10,7 +11,6 @@
 ### Account signup
 
 The app must allow users to register for a new account. \
-The project was created using the MVC model.\
 To prevent revealing user information, encrypt user passwords.
 
 ### Account login
