@@ -44,11 +44,13 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             </li>
             <li>
                 <div class="icon-text-container">
-                    <a href="?action=logoutUser">
+                    <a href="?action=logoutUser&csrf_token=<?php echo $_SESSION['csrf_token']; ?>">
                         <img src="http://localhost/base_account/images/logout.png" alt="Đăng xuất">
                         Đăng xuất
                     </a>
                 </div>
+
+
             </li>
         </ul>
     </div>
