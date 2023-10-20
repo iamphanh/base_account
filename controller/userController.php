@@ -147,7 +147,7 @@ class UserController
         $phone = isset($_POST['newPhone']) ? $_POST['newPhone'] : '';
         $address = isset($_POST['newAddress']) ? $_POST['newAddress'] : '';
         $company = isset($_POST['newCompanyName']) ? $_POST['newCompanyName'] : '';
-        $username = isset($_POST['newUsername']) ? $_POST['newUsername'] : '';
+        $username = isset($_POST['newUsername']) ? $_POST['newUsername'] : 'Chưa nhập username';
         $usermodel = new UserModel();
 
         if (isset($_POST['newProfileImage']) && $_POST['newProfileImage'] != '') {
