@@ -1,20 +1,13 @@
 <?php 
+require_once('core/Application.php');
+$app = new Application();
 
-$controller = isset($_GET['controller']) ? $_GET['controller'] . 'controller' : 'userController';
-
-// Kiểm tra xem action có được truyền trong URL hay không
-$action = isset($_GET['action']) ? $_GET['action'] : 'loginUser';
-
-// Nếu action không được truyền hoặc action là trang đăng nhập, thì hiển thị trang đăng nhập
-if (empty($action) || $action === 'loginUser') {
-    require_once('controller/userController.php');
-    $userController = new UserController();
-    $userController->loginUser();
-} else {
-    require_once('controller/' . $controller . '.php');
-    $userController = new $controller();
-    $userController->$action();
-
-}
-
+$app->router->get('/base_account/', '', 'login'); 
+$app->router->get('/base_account/?action=loginUser','loginUser', 'login'); 
+$app->router->post('/base_account/?action=loginUser','loginUser', 'profile');   
+$app->router->get('/base_account/?action=signupUser', 'signupUser', 'signup');  
+$app->router->post('/base_account/?action=updateUser','updateUser', 'profile'); 
+$app->router->post('/base_account/?action=signupUser','signupUser','profile');
+$app->router->get('/base_account/?action=logoutUser','logoutUser', 'signup');  
+$app->run();
 ?>

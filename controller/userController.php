@@ -3,7 +3,7 @@ require_once('model/userModel.php');
 class UserController
 {
 
-    public function loginUser()
+    static public function loginUser()
     {
         $email = isset($_POST['email']) ? $_POST['email'] : '';
         $password = isset($_POST['password']) ? $_POST['password'] : '';
@@ -42,7 +42,7 @@ class UserController
     }
 
 
-    public function logoutUser()
+    static public function logoutUser()
     {
         session_start();
         if (
@@ -60,7 +60,7 @@ class UserController
             exit();
         }
     }
-    public function signupUser()
+    static public function signupUser()
     {
         $email = isset($_POST['email']) ? $_POST['email'] : '';
         $password = isset($_POST['password']) ? $_POST['password'] : '';
@@ -132,7 +132,7 @@ class UserController
 
 
 
-    public function updateUser()
+    static public function updateUser()
     {
         session_start();
 

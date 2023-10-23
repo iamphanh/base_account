@@ -26,26 +26,29 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
     <meta name="keywords" content="Account, Base Account">
     <meta name="description" content="Account, Base Account">
     <link rel="shortcut icon" href="https://static-devtest.basecdn.net/account/image/fav.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css"
-        href="https://account.basevn.tech/css/bO5sZUswQjw8YyagXAeCClL_OA6Di9uORZCbMqpJhrMz3rZAyE5Q9zNu5_oDQ7ue?v=0411b0f8f5e37f2fc3fe&amp;var=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin">
+    <link rel="stylesheet" type="text/css" href="https://account.basevn.tech/css/bO5sZUswQjw8YyagXAeCClL_OA6Di9uORZCbMqpJhrMz3rZAyE5Q9zNu5_oDQ7ue?v=0411b0f8f5e37f2fc3fe&amp;var=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin">
     <link rel="stylesheet" type="text/css" href="http://localhost/base_account/view/css/styles.css">
 
-    <script type="text/javascript" defer=""
-        src="https://cdn.segment.com/analytics.js/v1/fED4Dyp1ECZM2gBWtooAjlasa6bRkXqR/analytics.min.js"></script>
+    <script type="text/javascript" defer="" src="https://cdn.segment.com/analytics.js/v1/fED4Dyp1ECZM2gBWtooAjlasa6bRkXqR/analytics.min.js"></script>
     <script type="text/javascript">
+        < div id = "base-search" > < /div>
 
-            <div id="base-search"></div>
-
-<!-- Google tag (gtag.js) -->
-            <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7ZLQM5JV1Z"></script>
+            <
+            !--Google tag(gtag.js) -- >
+            <
+            script async = ""
+        src = "https://www.googletagmanager.com/gtag/js?id=G-7ZLQM5JV1Z" >
+    </script>
     <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-                gtag('config', 'G-7ZLQM5JV1Z');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7ZLQM5JV1Z');
     </script>
 
 
@@ -201,8 +204,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li active url" data-url="account">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/setting.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/setting.png" alt="">
                                             </a>
                                             <div class="text">Account overview</div>
                                         </div>
@@ -212,8 +214,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.edit();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/pencil.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/pencil.png" alt="">
                                             </a>
                                             <div class="text">Edit account</div>
                                         </div>
@@ -222,8 +223,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.editLanguage();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/compass.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/compass.png" alt="">
                                             </a>
                                             <div class="text">Edit language</div>
                                         </div>
@@ -233,8 +233,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.editPassword();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/!.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/!.png" alt="">
                                             </a>
                                             <div class="text">Edit password</div>
                                         </div>
@@ -244,8 +243,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.chooseColor();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/palette.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/palette.png" alt="">
                                             </a>
                                             <div class="text">Edit theme color</div>
                                         </div>
@@ -254,8 +252,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.timesheet.set();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
                                             </a>
                                             <div class="text">Set timesheet</div>
                                         </div>
@@ -264,8 +261,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="2factor">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting"
-                                                    src="http://localhost/base_account/images/security.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/security.png" alt="">
                                             </a>
                                             <div class="text">2-factor authentication</div>
                                         </div>
@@ -297,8 +293,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="account/logins">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
                                             </a>
                                             <div class="text">Login histories</div>
                                         </div>
@@ -307,8 +302,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="account/devices">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/tv.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/tv.png" alt="">
                                             </a>
                                             <div class="text">Manage linked devices</div>
                                         </div>
@@ -318,8 +312,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/email.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/email.png" alt="">
                                             </a>
                                             <div class="text">Edit email notification</div>
                                         </div>
@@ -328,8 +321,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
                                             </a>
                                             <div class="text">Edit timezone</div>
                                         </div>
@@ -339,8 +331,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/link.png"
-                                                    alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/link.png" alt="">
                                             </a>
                                             <div class="text">On-leave delegation</div>
                                         </div>
@@ -372,8 +363,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                         <div id="profile">
 
                             <div class="main">
-                                <div class="image uploadable"><img
-                                        src="http://localhost/base_account/images/avt_default.jpg">
+                                <div class="image uploadable"><img src="http://localhost/base_account/images/avt_default.jpg">
                                     <div class="upload-form">
                                         <form method="post" id="_uuid14138_2214_1697616733" action="api/me/edit.avatar">
                                             <input type="file" name="image" id="_uuid23206_56571_1697616733">
@@ -447,8 +437,6 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     Honors and Awards
                                 </div>
 
-
-
                                 <div class="item-none">No information.</div>
                             </div>
                             <div class="sep-20"></div>
@@ -486,10 +474,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                             name
                                                         </div>
                                                     </div>
-                                                    <div class="input data"><input autocomplete="off" data-role=""
-                                                            id="newName" name="newName" type="text"
-                                                            value="<?php echo $fullname; ?>"
-                                                            placeholder="Your first name" class="std ">
+                                                    <div class="input data"><input autocomplete="off" data-role="" id="newName" name="newName" type="text" value="<?php echo $fullname; ?>" placeholder="Your first name" class="std ">
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -498,9 +483,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                             name
                                                         </div>
                                                     </div>
-                                                    <div class="input data"><input autocomplete="off" data-role=""
-                                                            id="_uuid1343_56060_1697620585" type="text" name="last_name"
-                                                            placeholder="Your last name" class="std "></div>
+                                                    <div class="input data"><input autocomplete="off" data-role="" id="_uuid1343_56060_1697620585" type="text" name="last_name" placeholder="Your last name" class="std "></div>
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="row -isfake  ">
@@ -519,8 +502,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                         </div>
                                                     </div>
                                                     <div class="input data">
-                                                        <div class="input-fake ap-xdot" id="newUsername"
-                                                            name="newUsername">
+                                                        <div class="input-fake ap-xdot" id="newUsername" name="newUsername">
                                                             @<b>
                                                                 <?php echo $username; ?>
                                                             </b>
@@ -531,17 +513,14 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                 <div class="row -istext  " id="_uuid13742_99284_1697620585">
                                                     <div class="label ">Company<div class="sublabel">Company</div>
                                                     </div>
-                                                    <div class="input data"><input autocomplete="off" data-role=""
-                                                            id="_uuid45725_2291_1697620585" type="text" name="title"
-                                                            placeholder="Job title" class="std "></div>
+                                                    <div class="input data"><input autocomplete="off" data-role="" id="_uuid45725_2291_1697620585" type="text" name="title" placeholder="Job title" class="std "></div>
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="row -isfile  " id="_uuid69420_29493_1697620585">
                                                     <div class="label ">Profile image<div class="sublabel">Profile image
                                                         </div>
                                                     </div>
-                                                    <div class="input data"> <input id="newProfileImage" type="file"
-                                                            name="newProfileImage"> </div>
+                                                    <div class="input data"> <input id="newProfileImage" type="file" name="newProfileImage"> </div>
                                                     <div class="clear"></div>
                                                 </div>
                                                 <div class="row -isbase  " id="_uuid22519_43989_1697620585">
@@ -550,8 +529,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                     </div>
                                                     <div class="input-group -count-3">
                                                         <div class="gi" style="width: 33.333333333333336%">
-                                                            <div class="select data"> <select
-                                                                    id="_uuid38269_6510_1697620585" name="dob_day">
+                                                            <div class="select data"> <select id="_uuid38269_6510_1697620585" name="dob_day">
                                                                     <option value="0">-- Select date --</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
@@ -587,8 +565,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                                 </select> </div>
                                                         </div>
                                                         <div class="gi" style="width: 33.333333333333336%">
-                                                            <div class="select data"> <select
-                                                                    id="_uuid3122_38486_1697620585" name="dob_month">
+                                                            <div class="select data"> <select id="_uuid3122_38486_1697620585" name="dob_month">
                                                                     <option value="0">-- Select month --</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
@@ -605,8 +582,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                                 </select> </div>
                                                         </div>
                                                         <div class="gi" style="width: 33.333333333333336%">
-                                                            <div class="select data"> <select
-                                                                    id="_uuid59787_22818_1697620585" name="dob_year">
+                                                            <div class="select data"> <select id="_uuid59787_22818_1697620585" name="dob_year">
                                                                     <option value="0">-- Select year --</option>
                                                                     <option value="2010">2010</option>
                                                                     <option value="2009">2009</option>
@@ -701,10 +677,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                             number
                                                         </div>
                                                     </div>
-                                                    <div class="input data"><input autocomplete="off" data-role=""
-                                                            type="text" id="newPhone" name="newPhone"
-                                                            placeholder="Your phone number" class="std "
-                                                            value="<?php echo $phone; ?>">
+                                                    <div class="input data"><input autocomplete="off" data-role="" type="text" id="newPhone" name="newPhone" placeholder="Your phone number" class="std " value="<?php echo $phone; ?>">
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -713,15 +686,11 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                                             address
                                                         </div>
                                                     </div>
-                                                    <div class="input data"><textarea data-role="" id="newAddress"
-                                                            name="newAddress" placeholder="Current address"
-                                                            value="<?php echo $address; ?>"
-                                                            style="overflow: hidden; overflow-wrap: break-word; height: 50px;"></textarea>
+                                                    <div class="input data"><textarea data-role="" id="newAddress" name="newAddress" placeholder="Current address" value="<?php echo $address; ?>" style="overflow: hidden; overflow-wrap: break-word; height: 50px;"></textarea>
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                                <div style="display:none"><input type="hidden" name="__code"
-                                                        value="90954cb39693a33ff2487236606c182e"></div>
+                                                <div style="display:none"><input type="hidden" name="__code" value="90954cb39693a33ff2487236606c182e"></div>
                                             </div>
 
                                             <div class="button-row">
@@ -750,8 +719,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <div style="display: none; height: 200px; overflow: auto;">
             <div style="height:100px;"></div>
         </div>
-        <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
-            style="display: none;"></ul>
+        <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul>
         <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
         <script src="http://localhost/base_account/view/js/script.js"></script>
         </body>

@@ -67,7 +67,7 @@ session_start();
                                 <div class="extra xo">
                                     <div class="simple">
                                         Bạn chưa có tài khoản?
-                                        <a class="a" href="?controller=user&action=signupUser">Đăng ký</a>
+                                        <a class="a" href="?action=signupUser">Đăng ký</a>
                                     </div>
                                 </div>
                             </div>
