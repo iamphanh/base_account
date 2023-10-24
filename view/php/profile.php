@@ -31,15 +31,6 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
     <link rel="stylesheet" type="text/css" href="http://localhost/base_account/view/css/styles.css">
 
     <script type="text/javascript" defer="" src="https://cdn.segment.com/analytics.js/v1/fED4Dyp1ECZM2gBWtooAjlasa6bRkXqR/analytics.min.js"></script>
-    <script type="text/javascript">
-        < div id = "base-search" > < /div>
-
-            <
-            !--Google tag(gtag.js) -- >
-            <
-            script async = ""
-        src = "https://www.googletagmanager.com/gtag/js?id=G-7ZLQM5JV1Z" >
-    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -723,5 +714,6 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
         <script src="http://localhost/base_account/view/js/script.js"></script>
         </body>
+</head>
 
 </html>

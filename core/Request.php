@@ -1,4 +1,5 @@
 <?php
+namespace App\core;
 class Request
 {
     public function getPath()

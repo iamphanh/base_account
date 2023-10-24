@@ -1,6 +1,8 @@
 <?php
-require_once("core/Request.php");
-require_once("core/Router.php");
+namespace App\core;
+
+// require_once("core/Request.php");
+// require_once("core/Router.php");
 class Application
 {
 

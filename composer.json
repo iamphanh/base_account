@@ -2,7 +2,7 @@
     "name": "true/base_account",
     "autoload": {
         "psr-4": {
-            "True\\BaseAccount\\": "src/"
+            "App\\": "base_account/"
         }
     },
     "authors": [

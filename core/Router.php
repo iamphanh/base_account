@@ -1,5 +1,5 @@
 <?php
-
+namespace App\core;
 require_once('core/Request.php');
 
 class Router {

@@ -1,8 +1,7 @@
-
-
-
 <?php
-require_once('model/DbModel.php');
+namespace App\model;
+use PDO;
+// require_once('model/DbModel.php');
 
 class UserModel extends DbModel {
 
