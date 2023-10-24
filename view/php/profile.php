@@ -370,16 +370,16 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                         <?php echo $company; ?>
                                     </div>
 
-                                    <div class="info">
+                                    <div class="info1">
                                         <b>Email address</b>
                                         <?php echo $email; ?>
                                     </div>
 
-                                    <div class="info">
+                                    <div class="info1">
                                         <b>Phone number</b>
                                         <?php echo $phone; ?>
                                     </div>
-                                    <div class="info" style="display: none;">
+                                    <div class="info1" style="display: none;">
                                         <b>Direct managers</b>
                                         <div class="" id="js-managers"></div>
                                     </div>

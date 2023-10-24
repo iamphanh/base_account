@@ -458,16 +458,8 @@ __fdialogwrapper {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-#profile .main .info b{
-	display:inline-block;
- color:#666;
-	font-weight:500;
-	position:absolute;
-	width:110px;
-	left:0px;
-}
 
-#profile .main .info{
+#profile .main .info1{
 	padding-top:8px;
 	font-size:14px;
 	position:relative;
@@ -527,4 +519,12 @@ __fdialogwrapper {
 
 #menu .box {
   padding-bottom: 5px;
+}
+
+#profile .main .info1 b{
+	display:inline-block;
+	color:#666;
+	font-weight:500;
+	width:110px;
+	left:0px;
 }
