@@ -1,6 +1,7 @@
 /* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  font-size: 12px;
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -94,7 +95,9 @@ body {
   background-color: #ccc;
   color: #fff;
 }
-
+#saveButton:hover {
+  background-color: #3ba710;
+}
 #avatarImage {
   max-width: 100px;
   max-height: 100px;
@@ -136,8 +139,10 @@ form button {
 }
 
 #saveButton {
+  font-weight: bold !important;
   background-color: #12be6e;
   color: #fff;
+  font-size: larger;
 }
 
 .info_detail {
@@ -316,6 +321,12 @@ form button {
 }
 
 #setting {
+  width: 15px;
+  height: 15px;
+  margin-inline: 10px;
+}
+
+#icon-1 {
   width: 18px;
   height: 18px;
   margin-inline: 10px;
@@ -339,7 +350,7 @@ form button {
 
 .title {
   margin-left: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .title-edit {
   color: #757373;
@@ -361,80 +372,233 @@ form button {
 }
 
 #editButton {
-    position: absolute;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: normal;
-    color: #fff;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    padding: 9px 15px;
-    background-color: #17C286;
-    top: 18px;
-    right: 0px;
+  position: absolute;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #fff;
+  border: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 9px 15px;
+  background-color: #17c286;
+  top: 18px;
+  right: 0px;
 }
-.__dialogtitlewrap{
-	color:#555;
-	position:relative;
-	padding:15px 18px;
-	position:relative;
-	font-weight:normal;
-	text-align:center;
-	background-color: #eee;
-	-moz-border-radius: 3px 3px 0 0;
- -webkit-border-radius: 3px 3px 0 0;
- border-radius: 3px 3px 0 0;
+#editButton:hover{
+  background-color: #3ba710;
 }
-
-.__dialogcontent{
-	min-height:40px;
-	border-top:1px solid transparent;
-	padding:30px 20px;
+.__dialogtitlewrap {
+  color: #555;
+  position: relative;
+  padding: 15px 18px;
+  position: relative;
+  font-weight: normal;
+  text-align: center;
+  background-color: #eee;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 
-.__dialogwrapper{
-	position:absolute;
-	padding-bottom:10px;
-    padding: 0;
-	margin: 0;
-	font-family:inherit;
-	font-size:inherit;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke: 0.0px;
-	text-rendering: geometricPrecision;
+.__dialogcontent {
+  min-height: 40px;
+  border-top: 1px solid transparent;
+  padding: 30px 20px;
 }
-.ap-xdot{
-	overflow:hidden;
-	text-overflow:ellipsis;
-	white-space:nowrap;
-	word-wrap: normal;
+
+.__dialogwrapper {
+  position: absolute;
+  padding-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0px;
+  text-rendering: geometricPrecision;
+}
+.ap-xdot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
 }
 
 __fdialogwrapper {
-	height:100%;
-	overflow-y:scroll;
-	position:relative;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
 }
 
 .scroll-y.forced-scroll {
-    overflow-y: scroll !important;
+  overflow-y: scroll !important;
 }
 .__dialogmain {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 90px;
-    min-width: 450px;
-    max-width: 900px;
-    z-index: 1600;
-    padding-bottom: 10px;
-    background-color: #fff;
-    border-radius: 3px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 90px;
+  min-width: 450px;
+  max-width: 900px;
+  z-index: 1600;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 3px;
 }
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1500;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1500;
+}
+
+#menu .li {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  color: #555;
+  padding: 10px 10px 10px 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#profile .main .info1 {
+  padding-top: 8px;
+  font-size: 14px;
+  position: relative;
+  padding-left: 0px;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+.__dialogtitle {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+.form.form-inline .label {
+  float: left;
+  font-weight: 500;
+  font-size: 14px;
+  width: 180px;
+  padding: 0;
+}
+.back1 {
+  padding-top: 18px;
+  padding-left: 40px;
+  cursor: pointer;
+  display: block;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 50%;
+}
+
+.apptitle .back1 .title {
+  font-size: 18px;
+  font-weight: 300;
+  color: #222;
+}
+
+.apptitle .back1 .label {
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 11px;
+  font-weight: normal;
+  padding-bottom: 3px;
+}
+
+#menu .title {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  padding: 13px 20px 10px 20px;
+  border-top: 1px solid #eee;
+}
+
+#menu .box {
+  padding-bottom: 5px;
+}
+
+#profile .main .info1 b {
+  display: inline-block;
+  color: #666;
+  font-weight: 500;
+  width: 110px;
+  left: 0px;
+}
+
+.__dialogclose {
+  position: absolute;
+  cursor: pointer;
+  color: #aaa;
+  right: 10px;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 4px 5px;
+  border: 1px solid transparent;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#close-btn:hover {
+  background-color: #f39999;
+}
+
+#setting1 {
+  font-family: ap;
+  content: "\e094";
+  position: absolute;
+  font-size: 24px;
+  color: #aaa;
+  left: 0px;
+  top: 27px;
+  width: 18px;
+  height: 18px;
+  margin-inline: 10px;
+}
+
+path {
+  fill: #888888;
+}
+
+path:hover {
+  fill: #ffffff;
+}
+#close-1 {
+  height: 15px;
+  width: 15px;
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+.item:hover #icon-1 {
+  /* Add your hover styles for the image here */
+  /* For example, you can change the image opacity when hovered */
+  opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+.item:hover #logout-text {
+  /* Add your hover styles for the text here */
+  /* For example, you can change the text color when hovered */
+  color: #fff; /* Change this to your desired text color */
 }

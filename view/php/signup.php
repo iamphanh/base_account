@@ -7,12 +7,9 @@ session_start();
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="shortcut icon" href="https://static-gcdn.basecdn.net/account/image/fav.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css"
-        href="https://account.base.vn/css/zJiU_tPJLoaUpYoFc22eCFD1Mk6Jt-28ILBpjl89n2j6t_Hat4ey1mIBVuLg_g2a?v=hy49zuLTrpHVvCl4&amp;var=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin">
-    <link rel="stylesheet" type="text/css"
-        href="https://account.base.vn/css/JkocGYfMOXIlOdxJEt76nw?v=hy49zuLTrpHVvCl4&amp;var=1">
+    <link rel="stylesheet" type="text/css" href="https://account.base.vn/css/zJiU_tPJLoaUpYoFc22eCFD1Mk6Jt-28ILBpjl89n2j6t_Hat4ey1mIBVuLg_g2a?v=hy49zuLTrpHVvCl4&amp;var=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin">
+    <link rel="stylesheet" type="text/css" href="https://account.base.vn/css/JkocGYfMOXIlOdxJEt76nw?v=hy49zuLTrpHVvCl4&amp;var=1">
     <title>Đăng ký - Base Account</title>
 </head>
 
@@ -44,8 +41,7 @@ session_start();
                                 </div>
                                 <div class="row">
                                     <div class="label">Số điện thoại</div>
-                                    <div class="input"><input type="tel" name="phone"
-                                            placeholder="Số điện thoại của bạn"></div>
+                                    <div class="input"><input type="tel" name="phone" placeholder="Số điện thoại của bạn"></div>
                                 </div>
                                 <div class="row">
                                     <div class="label">Email</div>
@@ -60,16 +56,14 @@ session_start();
                                 </div>
                                 <div class="row">
                                     <div class="label">Mật khẩu</div>
-                                    <div class="input"><input type="password" id="signup-password" name="password"
-                                            placeholder="Mật khẩu của bạn" class="__ap_enter_binded"></div>
+                                    <div class="input"><input type="password" id="signup-password" name="password" placeholder="Mật khẩu của bạn" class="__ap_enter_binded"></div>
                                 </div>
-                                    <div class="msg" id="error-msg-signup" style="color:red" ;></div>
+                                <div class="msg" id="error-msg-signup" style="color:red" ;></div>
                                 <script>
                                     document.getElementById('error-msg-signup').innerText = errorMessage;
                                 </script>
                                 <div class="row relative xo">
-                                    <button class="submit" type="submit"
-                                        style="text-align: center; margin: 0 auto; display: flex; border: 2px solid #2bd14e;">Đăng ký</button>
+                                    <button class="submit" type="submit" style="text-align: center; margin: 0 auto; display: flex;justify-content: center; border: 2px solid #2bd14e;  width: 100%; padding: 10px 2px;">Đăng ký</button>
                                 </div>
                                 <div class="extra xo">
                                     <div class="simple">

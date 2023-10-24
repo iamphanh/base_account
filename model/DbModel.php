@@ -1,4 +1,7 @@
 <?php 
+namespace App\model;
+use PDO;
+use PDOException;
 class DbModel {
 
     public function connect() {

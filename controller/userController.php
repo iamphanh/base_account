@@ -1,5 +1,8 @@
 <?php
-require_once('model/userModel.php');
+
+namespace App\controller;
+use App\model\UserModel;
+// require_once('model/userModel.php');
 class UserController
 {
 

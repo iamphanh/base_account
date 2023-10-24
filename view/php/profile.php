@@ -31,15 +31,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
     <link rel="stylesheet" type="text/css" href="http://localhost/base_account/view/css/styles.css">
 
     <script type="text/javascript" defer="" src="https://cdn.segment.com/analytics.js/v1/fED4Dyp1ECZM2gBWtooAjlasa6bRkXqR/analytics.min.js"></script>
-    <script type="text/javascript">
-        < div id = "base-search" > < /div>
-
-            <
-            !--Google tag(gtag.js) -- >
-            <
-            script async = ""
-        src = "https://www.googletagmanager.com/gtag/js?id=G-7ZLQM5JV1Z" >
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -65,7 +57,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item active item-main url" title="Tài khoản" data-url="account">
                 <div class="icon-text-container">
                     <a href="#">
-                        <img id="setting" src="http://localhost/base_account/images/ring.png" alt="">
+                        <img id="icon-1" src="http://localhost/base_account/images/icons8-settings.svg" alt="">
                     </a>
                 </div>
 
@@ -76,7 +68,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item item-main" title="Notifications" onclick="Base.toggle(&quot;notis&quot;);">
                 <div class="icon-text-container">
                     <a href="#">
-                        <img id="setting" src="http://localhost/base_account/images/ring.png" alt="">
+                        <img id="icon-1" src="http://localhost/base_account/images/ring.png" alt="">
                     </a>
                 </div>
 
@@ -87,7 +79,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item item-company url" data-url="company">
                 <div class="icon-text-container">
                     <a href="#">
-                        <img id="setting" src="http://localhost/base_account/images/people.png" alt="">
+                        <img id="icon-1" src="http://localhost/base_account/images/people.svg" alt="">
                     </a>
                 </div>
 
@@ -99,7 +91,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item item-chart url" data-url="company/units">
                 <div class="icon-text-container">
                     <a href="#">
-                        <img id="setting" src="http://localhost/base_account/images/group.png" alt="">
+                        <img id="icon-1" src="http://localhost/base_account/images/group.png" alt="">
                     </a>
                 </div>
 
@@ -110,7 +102,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item item-guest url" data-url="guests">
                 <div class="icon-text-container">
                     <a href="#">
-                        <img id="setting" src="http://localhost/base_account/images/ring.png" alt="">
+                        <img id="icon-1" src="http://localhost/base_account/images/ring.png" alt="">
                     </a>
                 </div>
 
@@ -124,7 +116,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <div class="item item-baseapps url" data-url="baseapps">
             <div class="icon-text-container">
                 <a href="#">
-                    <img id="setting" src="http://localhost/base_account/images/app.png" alt="">
+                    <img id="icon-1" src="http://localhost/base_account/images/app.png" alt="">
                 </a>
             </div>
 
@@ -137,10 +129,10 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
             <div class="item" title="Logout" onclick="Base.logout()">
                 <div class="icon-text-container">
                     <a href="?action=logoutUser&csrf_token=<?php echo $_SESSION['csrf_token']; ?>">
-                        <img id="setting" src="http://localhost/base_account/images/logout.png" alt="Đăng xuất">
+                        <img id="icon-1" src="http://localhost/base_account/images/logout-svgrepo-com.svg" alt="Đăng xuất">
                     </a>
                 </div>
-                <div class="ap-f14" style="margin-top:-5px; padding-bottom:6px;">Logout</div>
+                <div class="ap-f14" id="logout-text" style="margin-top:-5px; padding-bottom:6px;">Logout</div>
             </div>
 
         </div>
@@ -204,7 +196,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li active url" data-url="account">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/setting.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/icons8-settings.svg" alt="">
                                             </a>
                                             <div class="text">Account overview</div>
                                         </div>
@@ -214,7 +206,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.edit();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/pencil.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/pencil-svgrepo-com.svg" alt="">
                                             </a>
                                             <div class="text">Edit account</div>
                                         </div>
@@ -223,7 +215,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.editLanguage();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/compass.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/compass.svg" alt="">
                                             </a>
                                             <div class="text">Edit language</div>
                                         </div>
@@ -233,7 +225,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.info.editPassword();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/!.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/warning.svg" alt="">
                                             </a>
                                             <div class="text">Edit password</div>
                                         </div>
@@ -243,7 +235,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.chooseColor();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/palette.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/palette.svg" alt="">
                                             </a>
                                             <div class="text">Edit theme color</div>
                                         </div>
@@ -252,7 +244,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li" onclick="Me.timesheet.set();">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.svg" alt="">
                                             </a>
                                             <div class="text">Set timesheet</div>
                                         </div>
@@ -261,7 +253,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="2factor">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/security.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/security.svg" alt="">
                                             </a>
                                             <div class="text">2-factor authentication</div>
                                         </div>
@@ -293,7 +285,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="account/logins">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.svg" alt="">
                                             </a>
                                             <div class="text">Login histories</div>
                                         </div>
@@ -302,7 +294,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li url" data-url="account/devices">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/tv.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/tv.svg" alt="">
                                             </a>
                                             <div class="text">Manage linked devices</div>
                                         </div>
@@ -312,7 +304,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/email.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/email.svg" alt="">
                                             </a>
                                             <div class="text">Edit email notification</div>
                                         </div>
@@ -321,7 +313,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/clock.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/clock.svg" alt="">
                                             </a>
                                             <div class="text">Edit timezone</div>
                                         </div>
@@ -331,7 +323,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     <div class="li">
                                         <div class="icon-text-taskbar">
                                             <a href="#">
-                                                <img id="setting" src="http://localhost/base_account/images/link.png" alt="">
+                                                <img id="setting" src="http://localhost/base_account/images/link.svg" alt="">
                                             </a>
                                             <div class="text">On-leave delegation</div>
                                         </div>
@@ -352,7 +344,8 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                             <div class=""><button id="editButton">Chỉnh sửa thông
                                     tin</button>
                             </div>
-                            <div class="back url" data-url="company">
+                            <div class="back1" data-url="company">
+                                <img id="setting1" src="http://localhost/base_account/images/back.svg" alt="">
                                 <div class="label">Account</div>
                                 <div class="title">
                                     <?php echo $fullname; ?>
@@ -379,16 +372,16 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                         <?php echo $company; ?>
                                     </div>
 
-                                    <div class="info">
+                                    <div class="info1">
                                         <b>Email address</b>
                                         <?php echo $email; ?>
                                     </div>
 
-                                    <div class="info">
+                                    <div class="info1">
                                         <b>Phone number</b>
                                         <?php echo $phone; ?>
                                     </div>
-                                    <div class="info" style="display: none;">
+                                    <div class="info1" style="display: none;">
                                         <b>Direct managers</b>
                                         <div class="" id="js-managers"></div>
                                     </div>
@@ -463,7 +456,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                 </div>
                                 <div class="clear"></div>
                             </div>
-
+                            <div class="__dialogclose" id="close-btn"> <span class="close-icon"><img id="close-1" src="http://localhost/base_account/images/close.svg" alt=""></span> </div>
                             <div class="__dialogcontent">
                                 <div id="edit-fx-dx" class="__apdialog" title="" style="width: 720px;">
                                     <div class="form form-dialog form-inline">
@@ -694,7 +687,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                             </div>
 
                                             <div class="button-row">
-                                                <button type="button" id="cancelButton">Cancel</button>
+                                                <button type="button" id="cancelButton" class="button ok -success -rounded bold">Cancel</button>
                                                 <button type="submit" id="saveButton">Update</button>
                                             </div>
                                         </form>
@@ -722,6 +715,19 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul>
         <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
         <script src="http://localhost/base_account/view/js/script.js"></script>
+        <!-- <script>
+            $(document).ready(function() {
+                $("#close-btn").click(function() {
+                    $("#overlay").fadeOut();
+                });
+            });
+            $(document).ready(function() {
+                $("#cancelButton").click(function() {
+                    $("#overlay").fadeOut();
+                });
+            });
+        </script> -->
         </body>
+</head>
 
 </html>

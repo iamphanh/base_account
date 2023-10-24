@@ -1,0 +1,15 @@
+{
+    "name": "true/base_account",
+    "autoload": {
+        "psr-4": {
+            "App\\": "base_account/"
+        }
+    },
+    "authors": [
+        {
+            "name": "iamphanh",
+            "email": "iamphanh2912@gmail.com"
+        }
+    ],
+    "require": {}
+}

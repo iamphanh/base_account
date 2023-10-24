@@ -41,18 +41,16 @@ To prevent CSRF, sign out.
 
 ### Account profile
 
-![profile](img-readme/image-2.png)
+![profile](img-readme/image-3.png)
 
 ### Edit popup
 
-![popup](img-readme/image-3.png)
+![popup](img-readme/image-4.png)
 
 
 
 ### Database
 Database schema stored in databases.db file.
-
-![database](img-readme/image-4.png)
 
 ### Install a computer.
 
