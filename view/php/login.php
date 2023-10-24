@@ -61,7 +61,7 @@ session_start();
                                 </script>
                                 <div class="row relative xo">
                                     <button class="submit custom-login-button" type="submit"
-                                        style="text-align: center; margin: 0 auto; display: flex;" ;>Đăng nhập để bắt
+                                        style="text-align: center; margin: 0 auto; display: flex; justify-content: center;  width: 100%;" ;>Đăng nhập để bắt
                                         đầu làm việc</button>
                                 </div>
                                 <div class="extra xo">

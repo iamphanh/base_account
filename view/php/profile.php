@@ -344,6 +344,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                     tin</button>
                             </div>
                             <div class="back1" data-url="company">
+                                <img id="setting1" src="http://localhost/base_account/images/back.svg" alt="">
                                 <div class="label">Account</div>
                                 <div class="title">
                                     <?php echo $fullname; ?>
@@ -454,7 +455,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                 </div>
                                 <div class="clear"></div>
                             </div>
-
+                            <div class="__dialogclose" id="close-btn"> <span class="close-icon"><img id="close-1" src="http://localhost/base_account/images/close.svg" alt=""></span> </div>
                             <div class="__dialogcontent">
                                 <div id="edit-fx-dx" class="__apdialog" title="" style="width: 720px;">
                                     <div class="form form-dialog form-inline">
@@ -685,7 +686,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                                             </div>
 
                                             <div class="button-row">
-                                                <button type="button" id="cancelButton">Cancel</button>
+                                                <button type="button" id="cancelButton" class="button ok -success -rounded bold">Cancel</button>
                                                 <button type="submit" id="saveButton">Update</button>
                                             </div>
                                         </form>
@@ -713,6 +714,19 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul>
         <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
         <script src="http://localhost/base_account/view/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#close-btn").click(function() {
+                    $("#overlay").fadeOut();
+                });
+            });
+            $(document).ready(function() {
+                $("#cancelButton").click(function() {
+                    $("#overlay").fadeOut();
+                });
+            });
+        </script>
         </body>
 </head>
 

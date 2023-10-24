@@ -2,16 +2,17 @@ document.getElementById('editButton').addEventListener('click', function() {
     document.getElementById('__dialogmain').style.display = 'block';
 });
 
-document.getElementById('cancelButton').addEventListener('click', function() {
-    document.getElementById('__dialogmain').style.display = 'none';
-});
 document.getElementById('editButton').addEventListener('click', function() {
     document.getElementById('overlay').style.display = 'block';
 });
 
-document.getElementById('cancelButton').addEventListener('click', function() {
-    document.getElementById('overlay').style.display = 'none';
-});
+// document.getElementById('cancelButton').addEventListener('click', function() {
+//     document.getElementById('__dialogmain').style.display = 'none';
+// });
+
+// document.getElementById('cancelButton').addEventListener('click', function() {
+//     document.getElementById('overlay').style.display = 'none';
+// });
 
 const editButton = document.getElementById('editButton');
 const popup = document.getElementById('__dialogmain');
@@ -40,7 +41,16 @@ cancelButton.addEventListener('click', () => {
     popup.classList.add('hidden');
     localStorage.removeItem('popupDisplayed');
 });
-
+// $(document).ready(function(){
+//     $("#cancelButton").click(function(){
+//         $("#overlay").fadeOut();
+//     });
+// });
+// $(document).ready(function () {
+//         $("#close-btn").click(function () {
+//         $("#overlay").fadeOut();
+//     });
+// });
 
 
 
