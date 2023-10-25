@@ -386,6 +386,9 @@ form button {
   top: 18px;
   right: 0px;
 }
+#editButton:hover{
+  background-color: #3ba710;
+}
 .__dialogtitlewrap {
   color: #555;
   position: relative;
@@ -586,4 +589,16 @@ path:hover {
   width: 15px;
   padding-top: 4px;
   padding-left: 3px;
+}
+
+.item:hover #icon-1 {
+  /* Add your hover styles for the image here */
+  /* For example, you can change the image opacity when hovered */
+  opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+.item:hover #logout-text {
+  /* Add your hover styles for the text here */
+  /* For example, you can change the text color when hovered */
+  color: #fff; /* Change this to your desired text color */
 }

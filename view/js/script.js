@@ -1,56 +1,54 @@
-document.getElementById('editButton').addEventListener('click', function() {
-    document.getElementById('__dialogmain').style.display = 'block';
+$(document).ready(function() {
+    const $editButton = $('#editButton');
+    const $popup = $('#__dialogmain');
+    const $saveButton = $('#saveButton');
+    const $cancelButton = $('#cancelButton');
+    
+    const isPopupDisplayed = localStorage.getItem('popupDisplayed');
+
+    if (isPopupDisplayed) {
+        $popup.removeClass('hidden');
+    } else {
+        $popup.addClass('hidden');
+    }
+
+    $editButton.click(function() {
+        $popup.removeClass('hidden');
+        localStorage.setItem('popupDisplayed', 'true');
+    });
+
+    $saveButton.click(function() {
+        $popup.addClass('hidden');
+        localStorage.removeItem('popupDisplayed');
+    });
+
+    $cancelButton.click(function() {
+        $popup.addClass('hidden');
+        localStorage.removeItem('popupDisplayed');
+    });
 });
 
-document.getElementById('editButton').addEventListener('click', function() {
-    document.getElementById('overlay').style.display = 'block';
+$(document).ready(function(){
+    $("#cancelButton").click(function(){
+        $("#overlay").fadeOut();
+    });
+});
+$(document).ready(function () {
+        $("#close-btn").click(function () {
+        $("#overlay").fadeOut();
+    });
 });
 
-// document.getElementById('cancelButton').addEventListener('click', function() {
-//     document.getElementById('__dialogmain').style.display = 'none';
-// });
-
-// document.getElementById('cancelButton').addEventListener('click', function() {
-//     document.getElementById('overlay').style.display = 'none';
-// });
-
-const editButton = document.getElementById('editButton');
-const popup = document.getElementById('__dialogmain');
-const saveButton = document.getElementById('saveButton');
-const cancelButton = document.getElementById('cancelButton');
-
-const isPopupDisplayed = localStorage.getItem('popupDisplayed');
-
-if (isPopupDisplayed) { 
-    popup.classList.remove('hidden');
-} else {
-    popup.classList.add('hidden');
-}
-editButton.addEventListener('click', () => {
-   
-    popup.classList.remove('hidden');
-    localStorage.setItem('popupDisplayed', 'true');
+$(document).ready(function() {
+    $('#editButton').click(function() {
+        $('#__dialogmain').css('display', 'block');
+    });
 });
 
-saveButton.addEventListener('click', () => {
-    popup.classList.add('hidden');
-    localStorage.removeItem('popupDisplayed');
+$(document).ready(function() {
+    $('#editButton').click(function() {
+        $('#overlay').css('display', 'block');
+    });
 });
-
-cancelButton.addEventListener('click', () => {
-    popup.classList.add('hidden');
-    localStorage.removeItem('popupDisplayed');
-});
-// $(document).ready(function(){
-//     $("#cancelButton").click(function(){
-//         $("#overlay").fadeOut();
-//     });
-// });
-// $(document).ready(function () {
-//         $("#close-btn").click(function () {
-//         $("#overlay").fadeOut();
-//     });
-// });
-
 
 

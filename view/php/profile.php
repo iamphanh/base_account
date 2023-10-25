@@ -31,6 +31,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
     <link rel="stylesheet" type="text/css" href="http://localhost/base_account/view/css/styles.css">
 
     <script type="text/javascript" defer="" src="https://cdn.segment.com/analytics.js/v1/fED4Dyp1ECZM2gBWtooAjlasa6bRkXqR/analytics.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -131,7 +132,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                         <img id="icon-1" src="http://localhost/base_account/images/logout-svgrepo-com.svg" alt="Đăng xuất">
                     </a>
                 </div>
-                <div class="ap-f14" style="margin-top:-5px; padding-bottom:6px;">Logout</div>
+                <div class="ap-f14" id="logout-text" style="margin-top:-5px; padding-bottom:6px;">Logout</div>
             </div>
 
         </div>
@@ -714,8 +715,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
         <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul>
         <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
         <script src="http://localhost/base_account/view/js/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
+        <!-- <script>
             $(document).ready(function() {
                 $("#close-btn").click(function() {
                     $("#overlay").fadeOut();
@@ -726,7 +726,7 @@ $avt = isset($userData['avt']) ? $userData['avt'] : 'avt_default.jpg';
                     $("#overlay").fadeOut();
                 });
             });
-        </script>
+        </script> -->
         </body>
 </head>
 

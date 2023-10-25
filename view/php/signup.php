@@ -63,7 +63,7 @@ session_start();
                                     document.getElementById('error-msg-signup').innerText = errorMessage;
                                 </script>
                                 <div class="row relative xo">
-                                    <button class="submit" type="submit" style="text-align: center; margin: 0 auto; display: flex;justify-content: center; border: 2px solid #2bd14e;  width: 100%;">Đăng ký</button>
+                                    <button class="submit" type="submit" style="text-align: center; margin: 0 auto; display: flex;justify-content: center; border: 2px solid #2bd14e;  width: 100%; padding: 10px 2px;">Đăng ký</button>
                                 </div>
                                 <div class="extra xo">
                                     <div class="simple">
