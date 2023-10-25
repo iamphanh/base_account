@@ -1,30 +1,10 @@
-$(document).ready(function() {
-    const $editButton = $('#editButton');
-    const $popup = $('#__dialogmain');
-    const $saveButton = $('#saveButton');
-    const $cancelButton = $('#cancelButton');
-    
-    const isPopupDisplayed = localStorage.getItem('popupDisplayed');
-
-    if (isPopupDisplayed) {
-        $popup.removeClass('hidden');
-    } else {
-        $popup.addClass('hidden');
-    }
-
-    $editButton.click(function() {
-        $popup.removeClass('hidden');
-        localStorage.setItem('popupDisplayed', 'true');
-    });
-
-    $saveButton.click(function() {
-        $popup.addClass('hidden');
-        localStorage.removeItem('popupDisplayed');
-    });
-
-    $cancelButton.click(function() {
-        $popup.addClass('hidden');
-        localStorage.removeItem('popupDisplayed');
+const $editButton = $('#editButton');
+const $popup = $('#__dialogmain');
+const $saveButton = $('#saveButton');
+const $cancelButton = $('#cancelButton');
+$(document).ready(function(){
+    ($editButton,$cancelButton,$saveButton).click(function(){
+        $popup.toggleClass("hidden");
     });
 });
 

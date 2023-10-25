@@ -2,11 +2,10 @@
 
 namespace App\controller;
 use App\model\UserModel;
-// require_once('model/userModel.php');
 class UserController
 {
 
-    static public function loginUser()
+    public static function loginUser()
     {
         $email = isset($_POST['email']) ? $_POST['email'] : '';
         $password = isset($_POST['password']) ? $_POST['password'] : '';
@@ -45,7 +44,7 @@ class UserController
     }
 
 
-    static public function logoutUser()
+    public static function logoutUser()
     {
         session_start();
         if (
@@ -63,7 +62,7 @@ class UserController
             exit();
         }
     }
-    static public function signupUser()
+    public static function signupUser()
     {
         $email = isset($_POST['email']) ? $_POST['email'] : '';
         $password = isset($_POST['password']) ? $_POST['password'] : '';
@@ -135,7 +134,7 @@ class UserController
 
 
 
-    static public function updateUser()
+    public static function updateUser()
     {
         session_start();
 
